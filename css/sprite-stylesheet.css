@@ -1,0 +1,332 @@
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+}
+
+
+.sprite-4square-gray {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-analytics-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -31px -5px;
+}
+
+.sprite-analytics-green {
+    width: 60px;
+    height: 73px;
+    background-position: -101px -5px;
+}
+
+.sprite-avatar-footer {
+    width: 41px;
+    height: 42px;
+    background-position: -171px -5px;
+}
+
+.sprite-blue-man {
+    width: 20px;
+    height: 20px;
+    background-position: -222px -5px;
+}
+
+.sprite-bulb-green {
+    width: 22px;
+    height: 35px;
+    background-position: -252px -5px;
+}
+
+.sprite-button-left {
+    width: 22px;
+    height: 22px;
+    background-position: -284px -5px;
+}
+
+.sprite-button-right {
+    width: 22px;
+    height: 22px;
+    background-position: -316px -5px;
+}
+
+.sprite-check-green {
+    width: 22px;
+    height: 33px;
+    background-position: -348px -5px;
+}
+
+.sprite-circle-top {
+    width: 80px;
+    height: 80px;
+    background-position: -380px -5px;
+}
+
+.sprite-cirlce-bottom {
+    width: 80px;
+    height: 80px;
+    background-position: -470px -5px;
+}
+
+.sprite-customers-green {
+    width: 66px;
+    height: 67px;
+    background-position: -560px -5px;
+}
+
+.sprite-dashboard-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -636px -5px;
+}
+
+.sprite-dashboard-green {
+    width: 60px;
+    height: 73px;
+    background-position: -706px -5px;
+}
+
+.sprite-facebook-active {
+    width: 16px;
+    height: 16px;
+    background-position: -776px -5px;
+}
+
+.sprite-facebook-gray {
+    width: 16px;
+    height: 16px;
+    background-position: -802px -5px;
+}
+
+.sprite-footer {
+    width: 1200px;
+    height: 61px;
+    background-position: -5px -95px;
+}
+
+.sprite-foursquare-active {
+    width: 16px;
+    height: 16px;
+    background-position: -828px -5px;
+}
+
+.sprite-graph {
+    width: 420px;
+    height: 189px;
+    background-position: -5px -166px;
+}
+
+.sprite-green-article {
+    width: 19px;
+    height: 23px;
+    background-position: -854px -5px;
+}
+
+.sprite-green-bulb {
+    width: 14px;
+    height: 23px;
+    background-position: -883px -5px;
+}
+
+.sprite-green-check {
+    width: 22px;
+    height: 20px;
+    background-position: -907px -5px;
+}
+
+.sprite-green-circle {
+    width: 24px;
+    height: 24px;
+    background-position: -939px -5px;
+}
+
+.sprite-green-man {
+    width: 78px;
+    height: 82px;
+    background-position: -435px -166px;
+}
+
+.sprite-left-pic {
+    width: 280px;
+    height: 160px;
+    background-position: -523px -166px;
+}
+
+.sprite-line-graph-green {
+    width: 195px;
+    height: 84px;
+    background-position: -813px -166px;
+}
+
+.sprite-line-graph-orange {
+    width: 195px;
+    height: 84px;
+    background-position: -813px -260px;
+}
+
+.sprite-list-green {
+    width: 22px;
+    height: 35px;
+    background-position: -973px -5px;
+}
+
+.sprite-marker {
+    width: 40px;
+    height: 10px;
+    background-position: -1005px -5px;
+}
+
+.sprite-menu {
+    width: 1200px;
+    height: 155px;
+    background-position: -5px -365px;
+}
+
+.sprite-messages-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -1055px -5px;
+}
+
+.sprite-messages-green {
+    width: 60px;
+    height: 73px;
+    background-position: -1125px -5px;
+}
+
+.sprite-middle-pic {
+    width: 280px;
+    height: 171px;
+    background-position: -5px -530px;
+}
+
+.sprite-orange-button-left {
+    width: 22px;
+    height: 50px;
+    background-position: -1018px -166px;
+}
+
+.sprite-orange-button-right {
+    width: 22px;
+    height: 50px;
+    background-position: -1050px -166px;
+}
+
+.sprite-orange-check {
+    width: 22px;
+    height: 21px;
+    background-position: -1082px -166px;
+}
+
+.sprite-orange-man {
+    width: 78px;
+    height: 82px;
+    background-position: -1114px -166px;
+}
+
+.sprite-page-green {
+    width: 66px;
+    height: 67px;
+    background-position: -435px -258px;
+}
+
+.sprite-paper-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -1018px -258px;
+}
+
+.sprite-paper-green {
+    width: 60px;
+    height: 73px;
+    background-position: -1088px -258px;
+}
+
+.sprite-people-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -295px -530px;
+}
+
+.sprite-people-green {
+    width: 60px;
+    height: 73px;
+    background-position: -365px -530px;
+}
+
+.sprite-ribbon-left {
+    width: 15px;
+    height: 40px;
+    background-position: -1158px -258px;
+}
+
+.sprite-ribbon-right {
+    width: 15px;
+    height: 40px;
+    background-position: -1183px -258px;
+}
+
+.sprite-right-pic {
+    width: 280px;
+    height: 160px;
+    background-position: -435px -530px;
+}
+
+.sprite-search {
+    width: 23px;
+    height: 22px;
+    background-position: -1158px -308px;
+}
+
+.sprite-settings_grey {
+    width: 20px;
+    height: 20px;
+    background-position: -725px -530px;
+}
+
+.sprite-tag-blue {
+    width: 60px;
+    height: 73px;
+    background-position: -755px -530px;
+}
+
+.sprite-tag-green {
+    width: 60px;
+    height: 73px;
+    background-position: -825px -530px;
+}
+
+.sprite-twitter-active {
+    width: 16px;
+    height: 16px;
+    background-position: -895px -530px;
+}
+
+.sprite-twitter-gray {
+    width: 16px;
+    height: 16px;
+    background-position: -921px -530px;
+}
+
+.sprite-up-arrow-blue {
+    width: 14px;
+    height: 9px;
+    background-position: -1191px -308px;
+}
+
+.sprite-youtube-active {
+    width: 16px;
+    height: 16px;
+    background-position: -947px -530px;
+}
+
+.sprite-youtube-gray {
+    width: 16px;
+    height: 16px;
+    background-position: -973px -530px;
+}
