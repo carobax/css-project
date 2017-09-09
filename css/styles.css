@@ -1,3 +1,17 @@
+
+html, body {
+  font-family: "Myriad Pro", Arial, sans-serif !important;
+  overflow-x: hidden;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row > [class^="col-"], .row > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .container {
   max-width: 1100px;
 }
@@ -90,15 +104,32 @@
 /*search form used from https://codepen.io/vubon/pen/raZZVg that I manipulated*/
 .add-on .input-group-btn > .btn {
   border-left-width:0;left:0px;
+  margin-top: 7px;
+  padding-left: 20px;
+  float: right;
 }
 /* stop the glowing blue shadow */
 .add-on .form-control:focus {
  box-shadow:none;
  -webkit-box-shadow:none;
  border-color:#cccccc;
+ float: right;
 }
 .form-control{
   height: 36px;
+  margin-top: 7px;
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+#colmd4 {
+  padding: 0px !important;
+  float: right !important;
 }
 
 /*background for rest of content*/
@@ -106,6 +137,7 @@
 .content {
   background: url(../images/shade.png);
   width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: 10px;
   padding-top: 10px;
@@ -156,17 +188,41 @@
 }
 
 /*tasks row*/
-
+.tasks-hover:hover{
+  color: #cccccc;
+}
 .padding {
   padding: 10px;
 }
 .settings-margin{
   margin-top: 20px;
 }
-
-.tasks-font {
+.large-font {
   font-size: 30px;
 }
+.green-circle {
+  background-image: url("../images/green-circle.png");
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: 7px;
+}
+.count-border {
+  border: 1px solid;
+  border-color: #dddddd;
+  border-radius: 2px;
+  position: absolute;
+  padding: 4px;
+  margin-top: 5px;
+}
+.margin-fix {
+  margin-right: 7px;
+}
+
 
 p {
   font-family: "myriad-pro", sans-serif;
@@ -196,4 +252,93 @@ ul{
 }
 li {
   display: inline;
+}
+
+/*footer*/
+.footer-shadow{
+  background: gray; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ffffff, #e2e2e2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffffff, #e2e2e2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffffff, #e2e2e2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #e2e2e2); /* Standard syntax */
+  display: block;
+  width: 100%;
+  height: 8px;
+}
+.footer-background {
+  background: gray; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#f5f5f5, #ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f5f5f5, y#ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f5f5f5, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f5f5f5, #ffffff); /* Standard syntax */
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-family: "proxima-nova", sans-serif ;
+}
+
+.footer-links {
+  padding: 14px;
+  border-right: 1px solid #dddddd;
+}
+.footer-links a{
+  padding: 2px 8px 2px 10px;
+  color: #999999;
+}
+.border-link-right {
+  border-right: 1px solid #dddddd;
+}
+
+.border-link-left {
+  border-left: 1px solid #dddddd;
+}
+
+.footer-links-blue {
+  padding: 14px;
+}
+
+.footer-links-blue a{
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #2498f2;
+}
+/*fixed padding with logout link*/
+.links-blue a{
+  color: #2498f2;
+  padding-top: 14px;
+  display: inline-block;
+}
+
+.margin-padding {
+  margin-left: 10px;
+}
+
+.social-padding {
+  padding: 14px;
+}
+
+/*social media links hover*/
+.sprite-facebook-gray:hover {
+  background: url(../images/spritesheet.png);
+  width: 16px;
+  height: 16px;
+  background-position: -776px -5px;
+}
+.sprite-twitter-gray:hover {
+  background: url(../images/spritesheet.png);
+  width: 16px;
+  height: 16px;
+  background-position: -895px -530px;
+}
+.sprite-4square-gray:hover {
+  background: url(../images/spritesheet.png);
+  width: 16px;
+  height: 16px;
+  background-position: -828px -5px;
+}
+.sprite-youtube-gray:hover {
+  background: url(../images/spritesheet.png);
+  width: 16px;
+  height: 16px;
+  background-position: -947px -530px;
 }
