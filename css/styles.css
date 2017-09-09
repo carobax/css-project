@@ -3,13 +3,14 @@ html, body {
   font-family: "Myriad Pro", Arial, sans-serif !important;
   overflow-x: hidden;
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
+/*Stack Overflow how to change the padding and margins for bootstrap cols*/
 .row > [class^="col-"], .row > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .container {
