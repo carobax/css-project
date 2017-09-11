@@ -124,7 +124,7 @@
                           <h4>Welcome Contacts</h4>
                         </div>
                       <div class="col-md-3 col-sm-12">
-                        <div class="count-border">
+                        <div class="count-border hidden">
                         <li class="sprite sprite-blue-man float-left margin-fix"></li>
                         <li class="float-right">32</li>
                       </div>
@@ -140,7 +140,7 @@
                           <h4>Provide Responses</h4>
                         </div>
                       <div class="col-md-3 col-sm-3">
-                        <div class="count-border">
+                        <div class="count-border hidden">
                         <li class="sprite sprite-blue-man float-left margin-fix"></li>
                         <li class="float-right">36</li>
                       </div>
@@ -156,7 +156,7 @@
                           <h4>Review Activity</h4>
                         </div>
                       <div class="col-md-3">
-                        <div class="count-border">
+                        <div class="count-border hidden">
                         <li class="sprite sprite-blue-man float-left margin-fix"></li>
                         <li class="float-right">36</li>
                       </div>
@@ -172,7 +172,7 @@
                         <h4>Reach Out</h4>
                       </div>
                     <div class="col-md-3">
-                      <div class="count-border">
+                      <div class="count-border hidden">
                       <li class="sprite sprite-blue-man float-left margin-fix" style="margin-right:10px;"></li>
                       <li class="float-right" style="margin-right:5px;">3</li>
                     </div>
@@ -182,7 +182,7 @@
                   </div>
             <div class="row margin-bottom">
               <div class="col-md-12 right-border left-border">
-                <li class="large-font margin-padding">Recommendations</li>
+                <li class="large-font margin-padding" style="color:#2498f4;">Recommendations</li>
                 <div class="row dashed-border recommendations-hover" style="margin-top: 20px font-size: 10px;">
                   <div class="col-md-2 sprite sprite-list-green">
                   </div>
@@ -225,15 +225,16 @@
                     </div>
                   <div class="row">
                     <div class="col-md-8">
-                      <p class="float-left" style="margin-bottom: 0px;margin-top: 10px; margin-left: 70px; color: #b5b5b5;">ACTIVITY</p>
+                      <p class="float-left activity">ACTIVITY</p>
                       <div class="dropdown float-right">
                      <button class="dropbtn"><p>06/28/11 - 07/21/11</p><img src="images/down-arrow.png"></button>
                      <div class="dropdown-content">
                        <a href="#"><p>07/21/11 - Rest of Dates</p></a>
                       </div>
                     </div>
-                    <i class="sprite sprite-graph" style="margin-top: 50px;margin-left: 47px;"></i>
-
+                    <div class="graph">
+                    <i class="sprite sprite-graph"></i>
+                    </div>
                   </div>
                     <div class="col-md-4 gradient-border" style=" left: 50px;padding-left: 50px;">
                       <p style="margin-top:10px; color: #b5b5b5;">CHANNELS</p>
@@ -254,9 +255,9 @@
                 </div>
                 <!-- Start of Contacts and Customers row -->
                 <div class="row">
-                        <div class="col-md-6 bottom-border" style="padding-bottom: 30px;">
-                               <div class="sprite sprite-ribbon-left" style="top: 100px;left: 81px;"></div>
-                               <div class="white-tile-box"style="margin-top: 50px;padding-left: 0px;margin-right: 50px;margin-left: 95px;">
+                        <div class="col-md-6 hidden-xs bottom-border" style="padding-bottom: 30px;">
+                               <div class="sprite sprite-ribbon-left ribbon-left1"></div>
+                               <div class="white-tile-box">
                                   <div class="sprite sprite-green-man" style="margin-top: -29px; margin-left: 62px;"></div>
                                   <div style= "margin-top: -20px;">
                                      <div class="blue-row">
@@ -266,12 +267,12 @@
                                   </div>
                                   <div class="sprite sprite-line-graph-green" style="margin-left: 4px;margin-bottom: 5px;margin-top: -5px;"></div>
                                </div>
-                               <div class="sprite sprite-ribbon-right" style="left: 298px;bottom: 129px;"></div>
+                               <div class="sprite sprite-ribbon-right ribbon-right1"></div>
                         </div>
-                        <div class="col-md-6 bottom-border" style="padding-bottom: 30px;">
-                               <div class="sprite sprite-ribbon-left" style="top: 100px;left: 81px;"></div>
-                               <div class="white-tile-box"style="margin-top: 50px;padding-left: 0px;margin-right: 50px;margin-left: 95px;">
-                                  <div class="sprite sprite-orange-man" style="margin-top: -29px; margin-left: 62px;"></div>
+                        <div class="col-md-6 hidden-xs bottom-border" style="padding-bottom: 30px;">
+                               <div class="sprite sprite-ribbon-left ribbon-left2"></div>
+                               <div class="white-tile-box">
+                                  <div class="sprite sprite-orange-man"></div>
                                   <div style= "margin-top: -20px;">
                                      <div class="blue-row">
                                         <h4>17 CUSTOMERS</h4>
@@ -280,7 +281,7 @@
                                   </div>
                                   <div class="sprite sprite-line-graph-orange" style="margin-left: 4px;margin-bottom: 5px;margin-top: -5px;"></div>
                                </div>
-                               <div class="sprite sprite-ribbon-right" style="left: 298px;bottom: 129px;"></div>
+                               <div class="sprite sprite-ribbon-right ribbon-right2"></div>
                         </div>
                 </div>
                 <!-- Start of Did You Know row -->
@@ -288,7 +289,7 @@
                 <div class="row">
                 <div class="col-md-12 bottom-border did-you-know">
                   <div class="row">
-                    <div class="col-md-1">
+                    <div class="col-md-1 hidden-xs">
                     <a href="#"><div class="sprite sprite-orange-button-left buttons">
                     </div></a>
                     </div>
@@ -296,7 +297,7 @@
                     <p class="text-padding">DID YOU KNOW?</p>
                     <p class="text-padding2">Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1 hidden-xs">
                     <li><a href="#"><div class="sprite sprite-orange-button-right float-right buttons"></div></a></li>
                     </div>
                     </div>
@@ -306,12 +307,17 @@
                 </div>
               </div>
               <div class="row">
-              <div class="col-md-12 blue-background">
-                sdjhxfbs
-                </div>
-              </div>
-            </div>
+              <div class="col-md-12 blue-background list">
 
+                    <div class="white-background sprite sprite-left-pic float-left">
+                    </div>
+                  <div class="white-background">
+                    <div class="sprite sprite-middle-pic float-left" style="margin-top: -10px;">
+                </div>
+                </div>
+                  <div class="white-background sprite sprite-right-pic">
+
+                  </div>
             </div>
             </div>
 

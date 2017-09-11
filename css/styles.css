@@ -218,6 +218,18 @@ html, body {
   font-size: 18px;
   margin-top: 7px;
 }
+@media only screen and (max-width : 900px) {
+        .green-circle{
+             display: none;
+        }
+}
+
+@media only screen and (max-width : 900px) {
+        .hidden{
+             display: none;
+        }
+}
+
 .count-border {
   border: 1px solid;
   border-color: #dddddd;
@@ -277,6 +289,10 @@ h6 {
   margin-left: 12px;
 }
 
+@media query {
+
+}
+
 /*no dashed-border for mobile*/
 
 @media (max-width: 900px) {
@@ -291,7 +307,7 @@ h6 {
 .spacer
 {
   display: block;
-  height: 310px
+  height: 320px
 }
 
 @media (max-width: 900px) {
@@ -369,6 +385,43 @@ padding: 12px;
    border-image: linear-gradient(to right, #ddd, rgba(0, 0, 0, 0)) 1 100%;
 }
 
+.activity {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-left: 70px;
+  color: #b5b5b5;
+}
+
+.sprite-graph {
+margin-top: 50px;
+margin-left: 47px;
+}
+
+@media only screen and (max-width : 900px) {
+        .activity{
+          margin-bottom: 80px;
+          margin-top: -30px;
+          margin-left: -4px;
+          color: #b5b5b5;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: -110px;
+            margin-left: 20px;
+        }
+
+}
+@media only screen and (max-width : 900px) {
+  .graph {
+  margin-top: 30px;
+  margin-left:-40px;
+  width: 20%;
+  height: auto;
+  }
+
+}
+
 .space-2 {
   margin-right: 2.5em;
 }
@@ -395,6 +448,7 @@ input[type="checkbox"]:checked + label{
   display: inline-block;
   margin: 0px 2px 10px 10px;
 }
+
 /*social media boxes*/
 .sm-box {
   display: inline-block;
@@ -426,18 +480,23 @@ input[type="checkbox"]:checked + label{
 }
 @media (max-width: 900px) {
   #social-margin {
-    margin:0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
   }
 }
 
 .white-tile-box {
-    margin-top: 20px;
     background-color: white;
     border: 1px solid #cccccc;
     border-radius: 10px;
     box-shadow: 5px #b2b2b2;
     z-index: 50;
     padding: 0px;
+    margin-top: 50px;
+    padding-left: 0px;
+    margin-right: 50px;
+    margin-left: 95px;
 }
 .blue-row {
     background-color: #2498f4;
@@ -452,6 +511,48 @@ input[type="checkbox"]:checked + label{
 }
 .box-padding {
     padding-top: 50px;
+}
+.ribbon-left1 {
+  margin-top: 50px;
+  left: 82px;
+  top: 50px;
+}
+.ribbon-right1 {
+left: 298px;
+bottom: 129px;
+}
+
+.ribbon-left2 {
+  top: 100px;
+  left: 81px;
+}
+.ribbon-right2 {
+  left: 298px;bottom: 129px;
+}
+
+@media (max-width: 900px) {
+
+
+  .ribbon-left1 {
+  display:none;
+  width: 0px;
+  }
+  .ribbon-right1 {
+  display: none;
+  width: 0px;
+  }
+  .ribbon-left2 {
+    display: none;
+    width:0px;
+  }
+  .ribbon-right2 {
+    display: none;
+    width: 0px;
+  }
+}
+.sprite-orange-man {
+  margin-top: -29px;
+  margin-left: 62px;
 }
 
 /*Did you know box*/
@@ -488,6 +589,23 @@ input[type="checkbox"]:checked + label{
   display: block;
   background-color: #2498f4;
   width: auto;
+  left: 10px;
+  display: inline-flex;
+  position:relative;
+}
+
+.white-background {
+  display: block;
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  margin: 20px 35px 20px 35px;
+  box-shadow: 1px 1px 2px gray;
+}
+@media (max-width: 900px) {
+  .list {
+  display: none;
+  }
 }
 
 /*Get rid of bullets for UL*/
@@ -539,6 +657,16 @@ h1{
 
 .border-link-left {
   border-left: 1px solid #dddddd;
+}
+
+@media query (max-width: 900px;){
+  .border-link-right {
+    display: none;
+  }
+
+  .border-link-left {
+    display: none;
+  }
 }
 
 .footer-links-blue {
