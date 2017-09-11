@@ -3,7 +3,7 @@ html, body {
   font-family: "Myriad Pro", Arial, sans-serif !important;
   overflow-x: hidden;
 }
-/*Stack Overflow how to change the padding and margins for bootstrap cols*/
+/*https://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3*/
 .row > [class^="col-"], .row > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
@@ -12,6 +12,8 @@ html, body {
   margin-right: 0;
   margin-left: 0;
 }
+
+/*set container size*/
 
 .container {
   max-width: 1100px;
@@ -53,10 +55,10 @@ html, body {
   background-position: -706px -5px;
 }
 .sprite-dashboard-blue:active {
-  background: url(../images/spritesheet.png);
-  width: 40px;
-  height: 10px;
-  background-position: -1005px -5px;
+  background: url(../images/dashboard-active.png);
+  height: 78px;
+  width: 56px;
+  position: relative;
 }
 .sprite-people-blue:hover {
   background: url(../images/spritesheet.png);
@@ -128,17 +130,13 @@ html, body {
   float: right;
 }
 
-#colmd4 {
-  padding: 0px !important;
-  float: right !important;
-}
 
 /*background for rest of content*/
 
 .content {
   background: url(../images/shade.png);
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   margin-top: 10px;
   padding-top: 10px;
@@ -173,6 +171,12 @@ html, body {
   border-right: 1px solid lightgrey;
   border-collapse: collapse;
 }
+
+@media (max-width: 1000px) {
+  .top-border, .bottom-border, .left-border, .right-border {
+    border: 0px;
+  }
+}
 /*hover and active for buttons on announcements row*/
 
 .white-box .sprite-button-left:hover  {
@@ -191,7 +195,9 @@ html, body {
 /*tasks row*/
 .tasks-hover:hover{
   color: #cccccc;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 }
+
 .padding {
   padding: 10px;
 }
@@ -220,6 +226,11 @@ html, body {
   padding: 4px;
   margin-top: 5px;
 }
+/*padding fix for under tasks row*/
+#padding-fix{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .margin-fix {
   margin-right: 7px;
 }
@@ -229,6 +240,11 @@ p {
   font-family: "myriad-pro", sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+h6 {
+  position: relative;
+  margin-bottom:-10px;
 }
 
 /*align right for top nav bar text*/
@@ -247,12 +263,219 @@ p {
   height: 20px;
 }
 
+/*Recommendations row*/
+.recommendations-links{
+  color: #777777;
+}
+.recommendations-hover:hover{
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+.dashed-border {
+  border-bottom: 1px dashed;
+  border-color: #e5e5e5;
+  width: 325px;
+  margin-left: 12px;
+}
+
+/*no dashed-border for mobile*/
+
+@media (max-width: 900px) {
+  .dashed-border {
+    width: 0px;
+  }
+}
+
+.recommendations-margin {
+  margin-bottom: 10px !important;
+}
+.spacer
+{
+  display: block;
+  height: 200px
+}
+
+@media (max-width: 900px) {
+  .spacer{
+    display: none;
+    height: 0px
+  }
+}
+
+/*Analytics*/
+
+/* Style The Dropdown Button W3Schools */
+.dropbtn {
+  background-color: white;
+   color: #666666;
+   padding: 3px 7px;
+   font-size: 16px;
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn * {
+  display: inline;
+padding: 12px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+/*Gradient border*/
+.gradient-border {
+   border-width: 0px 0px 0px 4px;
+   border-style: solid;
+   -webkit-border-image:
+   -webkit-gradient: (linear, 100% 0, 0 0, from(#ddd), to(rgba(0, 0, 0, 0))) 1 100%;
+   -webkit-border-image: -webkit-linear-gradient(right, #ddd, rgba(0, 0, 0, 0)) 1 100%;
+   -moz-border-image: -moz-linear-gradient(right, #ddd, rgba(0, 0, 0, 0)) 1 100%;
+   -o-border-image: -o-linear-gradient(right, #ddd, rgba(0, 0, 0, 0)) 1 100%;
+   border-image: linear-gradient(to right, #ddd, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.space-2 {
+  margin-right: 2.5em;
+}
+
+/*Check Boxes*/
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label{
+  background: url(../images/check-box.png);
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin: 0px 2px 10px 10px;
+
+}
+input[type="checkbox"]:checked + label{
+  background: url(../images/checked.png);
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin: 0px 2px 10px 10px;
+}
+/*social media boxes*/
+.sm-box {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  display: inline;
+  vertical-align: top;
+  text-align: left;
+  padding: 4px 4px 2px 4px;
+}
+.facebook {
+  background-color: #114570;
+}
+.twitter {
+  background-color: #2298f4;
+}
+.foursquare {
+  background-color: #3a599b;
+}
+.googleplus {
+  background-color: #31cc66;
+}
+
+#social-margin {
+  margin-top: 30px;
+  margin-left: 105px;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  #social-margin {
+    margin:0px;
+  }
+}
+
+.white-tile-box {
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 5px #b2b2b2;
+    z-index: 50;
+    padding: 0px;
+}
+.blue-row {
+    background-color: #2498f4;
+}
+.blue-row p {
+    color: white;
+    text-align: center;
+}
+.box-padding {
+    padding-top: 50px;
+}
+
+/*Did you know box*/
+
+.did-you-know {
+  display: block;
+  background-color: #2498f4;
+  border-radius: 2px;
+  width: inherit;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
 /*Get rid of bullets for UL*/
 ul{
   list-style-type: none;
 }
 li {
   display: inline;
+}
+h1{
+  color: white;
+  margin-left: 20px;
 }
 
 /*footer*/

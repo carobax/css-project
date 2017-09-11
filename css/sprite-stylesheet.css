@@ -263,12 +263,14 @@
     width: 15px;
     height: 40px;
     background-position: -1158px -258px;
+    position: absolute;
 }
 
 .sprite-ribbon-right {
     width: 15px;
     height: 40px;
     background-position: -1183px -258px;
+    position: absolute;
 }
 
 .sprite-right-pic {

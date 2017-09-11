@@ -1,0 +1,11 @@
+.sprite {
+    background-image: url(../images/active-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-dashboard-active {
+    width: 56px;
+    height: 89px;
+    background-position: -5px -5px;
+}
