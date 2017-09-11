@@ -291,7 +291,7 @@ h6 {
 .spacer
 {
   display: block;
-  height: 200px
+  height: 310px
 }
 
 @media (max-width: 900px) {
@@ -442,6 +442,10 @@ input[type="checkbox"]:checked + label{
 .blue-row {
     background-color: #2498f4;
 }
+.blue-row h4 {
+  color: white;
+  text-align: center;
+}
 .blue-row p {
     color: white;
     text-align: center;
@@ -457,13 +461,33 @@ input[type="checkbox"]:checked + label{
   background-color: #2498f4;
   border-radius: 2px;
   width: inherit;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*text padding and styles for Did You Know box*/
+.text-padding {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: white;
+}
+.text-padding2 {
+  color: white;
+  margin-bottom: 20px;
 }
 
 .buttons {
-  margin-top: 15px;
+  margin-top: 25px;
+}
+
+/*Adverts*/
+
+.blue-background {
+  display: block;
+  background-color: #2498f4;
+  width: auto;
 }
 
 /*Get rid of bullets for UL*/
